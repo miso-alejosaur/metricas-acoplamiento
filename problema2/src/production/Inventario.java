@@ -3,27 +3,32 @@ package production;
 
 // import hashmap
 import java.util.HashMap;
+import java.util.List;
 
 public class Inventario {
-    public HashMap<String, Producto> productos;
+    private HashMap<String, Producto> productos;
 
-    public Inventario(){
+    private static Inventario instance = null;
+
+    public static Inventario getInventario() {
+        if(instance == null){
+            instance = new Inventario();
+        }
+
+        return instance;
+    }
+
+    private Inventario(){
         this.productos = new HashMap<String, Producto>();
     }
 
-    public static double darPrecio(Carrito carrito) {
-        double precio = 0;
-        for (Producto producto : carrito.productos) {
-            precio += producto.precio;
-        }
-        return precio;
-    }
-
-    public void actualizarInventario(Carrito carrito) {
-        for (Producto producto : carrito.productos) {
+    public void actualizarInventario(List<Producto> productos) {
+        for (Producto producto : productos) {
             this.productos.remove(producto.nombre);
         }
     }
 
-
+    public void addProduct(Producto producto) {
+        this.productos.put(producto.nombre, producto);
+    }
 }
