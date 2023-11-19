@@ -1,10 +1,10 @@
 package cars;
 
-public class Car implements IPrintable{
-	private IMotor motor;
+public class Car {
+	private Motor motor;
 
-	public Car(IMotor motor) {
-		this.motor = motor;
+	public Car() {
+		this.motor = new Motor();
 	}
 
 	public void accelerate() {

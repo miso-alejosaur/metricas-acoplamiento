@@ -1,6 +1,6 @@
 package cars;
 
-public class Motor implements IMotor {
+public class Motor {
 	
 	public int speed;
 	public int rpm;
