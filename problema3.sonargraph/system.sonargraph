@@ -1,4 +1,9 @@
 <?xml version="1.0" ?>
 <ns2:softwareSystem xmlns:ns2="http://www.hello2morrow.com/sonargraph/core" id="5f8dc0491059663f76f2f852309787a5" version="13.3.0.826">
 	<description></description>
+	<module xmlns:ns4="http://www.hello2morrow.com/sonargraph/languageprovider/java" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:xsdJavaModule" name="Main" id="c6ee7775edee650306acc2f6099b5f34" language="Java">
+		<description></description>
+		<rootPath name="./problema3/src"></rootPath>
+		<rootPath xsi:type="ns4:xsdSourceRootPath" name="./problema3/src"></rootPath>
+	</module>
 </ns2:softwareSystem>
