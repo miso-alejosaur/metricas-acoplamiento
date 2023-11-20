@@ -7,7 +7,7 @@ public class Displayer {
     public static void displayErrors(ArrayList<String> errors) {
         for (int i = 0; i < errors.size(); i++) {
             System.out.println("ERROR: " + errors.get(i));
-        }|
+        }
     }
 
     public static void displaySuccessMessage() {
