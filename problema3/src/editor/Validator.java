@@ -2,7 +2,7 @@ package editor;
 
 import java.util.ArrayList;
 
-public class Validator implements IValidator {
+public class Validator {
 	
 	public void checkSpelling(String text) {
 		ArrayList<String> errors = this.check(text);
